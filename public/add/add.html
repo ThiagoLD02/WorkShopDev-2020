@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Adicionar ideia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.add.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,400,700&display=swap" rel="stylesheet">
+    
+</head>
+    <body>
+        <div id="modal">
+            <div class="content">
+                <h1>Nova Ideia</h1> 
+                
+                <form action="/" method="POST" onsubmit="return checkFields(event)">
+                
+                    <div class="input-wrapper">
+                        <label for="title">Título da Ideia</label>
+                        <input type="text" name="title">
+                    </div>
+                
+                
+                    <div class="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+                
+                    <div class="input-wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image">
+                    </div>
+                
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descrição para essa idéia</label>
+                         <textarea name="description" cols="30" rows="10"></textarea>
+                        
+                    </div>
+                
+                    <div class="input-wrapper">
+                        <label for="link">Link da Ideia</label>
+                        <input type="url" name="link">
+                    </div>
+                    
+                    
+                        <a href="../../" onclick="onOff()">Voltar</a>
+                        <button>Salvar</button>
+                    
+        
+                </form> <!--Form action-->
+            </div> <!--Content-->
+        </div> <!-- Modal--> 
+        <script src="/script.js"></script>
+    </body>
+</html>

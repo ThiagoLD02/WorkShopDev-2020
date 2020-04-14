@@ -1,0 +1,216 @@
+
+body {
+    
+    background: #e5e5e5;
+    color: #25282B;
+    
+    
+
+    font-family: 'Comic Neue', cursive;
+
+    margin: 0;
+}
+
+header {
+   
+    margin: 16px 16px 0;
+    display: grid;
+    
+    
+   
+}
+
+header a{
+    
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #25282B;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .buttons{
+    display: flex;
+    grid-column: 2;
+    justify-content: flex-end;
+    
+}
+.button{
+    
+    background: #ff5e84;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    margin: 12px ;
+    justify-content: center;
+    text-align: center;
+    
+
+    width: 150px;
+    height: 40px;
+
+    box-shadow:  0px 8px 16px rgba(255,0,92,0.35);
+    
+    
+    
+}
+
+.button:hover{
+    
+    background: white;
+    color: #ff5e84;
+    cursor: pointer;
+
+    transition: 400ms;
+    
+}
+
+.title{
+    
+    text-align: center;
+}
+.title h3{
+    
+    margin: 10px 0 0 0;
+    color: #00000035;
+    
+}
+.title h1{
+    
+    margin:0;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.ideas{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #e5e5e5;
+    color: #25282B;
+
+    padding: 16px;
+
+    margin: 8px 0;
+
+    gap: 20px;
+
+}
+
+.idea{
+    background: white;
+    color: #25282B;
+    padding: 32px;
+
+    margin: 16px;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;
+    
+}
+
+.idea h3{
+    margin:0;
+}
+
+.idea p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.idea a{
+    grid-column: 1;
+    text-decoration: none;
+    color:#ff5e84 ;
+    display: flex;
+    
+        
+}
+.idea .actions{
+    display: grid;
+    align-items: center;
+    
+}
+
+.idea .show_more{
+    text-align: end;
+    font-weight: 900;
+}
+
+.description{
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    color: #777;
+
+    margin: 32px 0 ;
+}
+
+footer a{
+    text-decoration: none;
+    opacity: 0.7;
+}
+footer a:hover{
+    text-decoration: none;
+    color:#ff5e84 ;
+    opacity: 0.7;
+}
+a.delete-button{
+    
+    background: #ff5e84;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    
+    grid-column: 2;
+
+   
+    justify-self: right;
+    justify-content: center;
+    
+    align-items: center;
+    
+
+    width: 75px;
+    height: 40px;
+
+    box-shadow:  0px 8px 16px rgba(255,0,92,0.35);
+    
+    
+    
+}
+
+.delete-button:hover{
+    
+    background: red;
+    color: white;
+    cursor: pointer;
+
+    transition: 400ms;
+    
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estudos Iniciais</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+         <div id="container"> <!-- Container -->
+           
+            <section id="intro"> <!-- Section intro -->
+           
+                <header>
+                    <img src="/assets/logo.png">
+                </header>
+                
+                <main>
+                    <p>
+                        Ficar em casa em períodos longos, não deve ser nada fácil.
+                    </p>
+                    <p>
+                        Iremos catalogar ,<strong> brincadeiras, jogos, filmes, livros, 
+                        cursos, dicas </strong>e tudo que for necessário para tornar 
+                        esse momento mais interessante.
+                    </p>
+                    <p>
+                        Comece clicando em ver ideias para ver as  ideias cadastradas 
+                        e contribua adicioando a sua ideia.
+                    </p>    
+                    </p>
+                </main>
+
+
+                <section id="buttons">
+                    <a href="/add/add.html" class="button"> + Adicionar Ideia</a>
+                    <a href= "/ideas" class="fat" >Ver ideias</a>
+                </section>
+                
+                
+                <footer>
+                    Com ♥️ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a> 
+                    / 
+                    <a href="https://github.com/ThiagoLD02" target="_blank" >Thiago</a>
+                </footer>
+                
+            </section> <!-- Section intro -->
+            
+            <section id="last-ideias"> <!-- Section last -->
+               {% for idea in ideas %}
+                <div class="idea">
+
+                    <img src="{{idea.image}}" 
+                    alt="Imagem de {{idea.title}}">
+                    
+                    <div class="content">
+                        <h3>{{idea.title}}</h3>
+                        <p>{{idea.category}}</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit laborum non officia tempore reiciendis? Tempora beatae ex provident voluptate odio voluptatem nobis dolorem vitae fugit velit, doloremque, vero atque autem.
+                        </div>
+                        <a href="{{idea.link}}" target="_blank" >Ir para a Ideia</a>
+                    </div><!-- Content -->
+
+                </div> <!-- idea -->
+                {% endfor %}
+               
+            </section> <!-- Section last -->
+
+            
+
+        </div> <!-- Container -->
+            
+        <script src="/script.js"></script>
+    </body>
+</html>

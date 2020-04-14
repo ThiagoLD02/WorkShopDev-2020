@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.ideas.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,400,700&display=swap" rel="stylesheet">
+ 
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Casa Criativa">
+        <div class="buttons">
+            <a href="../../">Início</a>
+            <a href="/add/add.html" class="button">Nova ideia</a> 
+        </div>
+    
+    </header> <!--Cabecalho-->
+
+    <div class="title">
+        <h3>em exibição</h3>
+        <h1>Ideias</h1>
+
+    </div><!--title-->
+
+    <div class="ideas">
+
+        {% for idea in ideas %}
+                <div class="idea">
+
+                    <img src="{{idea.image}}" 
+                    alt="Imagem de {{idea.title}}">
+                    
+                    <div class="content">
+                        <h3>{{idea.title}}</h3>
+                        <p>{{idea.category}}</p>
+                        <div class="description">
+                            {{idea.description}}
+                        </div>
+                        <div class="actions">
+                            <a href="{{idea.link}}" target="_blank" >Ir para a Ideia</a>
+                            <a href="./" onclick="del()" class="delete-button">Deletar</a>
+                        </div>
+                    </div><!-- Content -->
+
+                </div> <!-- idea 1-->
+         {% endfor %}
+
+    </div><!--ideas-->
+
+    <footer>Com ♥️ <a href="http://rocketseat.com.br" target="_blank" >Rocketseat</a> / <a href="https://github.com/ThiagoLD02" target="_blank" >Thiago</a></footer>
+    <script src="/ideas/script.ideas.js"></script>
+</body>
+</html>
