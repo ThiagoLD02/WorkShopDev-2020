@@ -13,6 +13,7 @@ Tecnologias utilizadas:
 <li>Nunjucks</li>
 <li>Nodemon</li>
 <li>Sqlite3</li>  
+<li>Express</li> 
    
 # Layout
 <h2> Aqui estão as telas da aplicação. </h2>
